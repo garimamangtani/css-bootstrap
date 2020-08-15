@@ -1,0 +1,94 @@
+<!-- will see here jumbotron,containers,forms and navigation bars -->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- (anything entered here doednot show on page) -->
+    <!-- metadata goes here -->
+    <!-- This is a title -->
+    <title>Bootstrap Basics</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+  <body>
+    <!-- Nav bars -->
+    <!-- initailising nav bar (nav class empty navbar and div class header) this wil give a bar at top of the page-->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- In  header add the brand and button for dropdown , use data target id to give to specify what options to put in the button-->
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-navdemo"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- give us brand name using bootstrap class navbarbrand -->
+
+          <a class="navbar-brand" href="https://www.wikipedia.org/">WiKi</a>
+        </div>
+        <!-- after header add other links forms at left or right of nav bar as a list. Also have put in collose and button options-->
+        <div class="collapse navbar-collapse" id="bs-navdemo">
+          <ul class="nav navbar-nav">
+            <li><a href="a">About</a></li>
+            <li><a href="a">Offices</a></li>
+          </ul>
+          <!-- adding stuff to right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="a">Sign up</a></li>
+            <li><a href="a">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- jumbotron -->
+      <div class="jumbotron">
+        <h1>Hello People</h1>
+        <p>
+          Lets learn using bootstrap!!
+        </p>
+        <button class="btn btn-success active">Versions</button>
+      </div>
+      <!-- forms -->
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile" />
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label> <input type="checkbox" /> Check me out </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

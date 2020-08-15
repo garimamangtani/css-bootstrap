@@ -1,0 +1,40 @@
+body {
+  background: #f9d9d5;
+}
+.navbar-dark .navbar-brand {
+  color: red;
+  font-family: "Nunito";
+  font-size: 1.5rem;
+}
+#mynav {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 100;
+  font-family: "Nunito";
+}
+
+#mynav .nav-link:hover {
+  color: tomato;
+}
+
+#mynav .scrolled {
+  background-color: thistle;
+}
+#headgroup span {
+  color: tomato;
+  font-weight: 100;
+  font-family: "Nunito";
+}
+#headgroup h1 {
+  font-weight: 100;
+  font-family: "Nunito";
+  font-size: 4rem;
+}
+#head2 h1 {
+  color: red;
+  font-weight: 100;
+  font-family: "Nunito";
+}
+.head21 {
+  color: violet;
+}
